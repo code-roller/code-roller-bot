@@ -1,0 +1,20 @@
+{
+  "name": "code-roller.com",
+  "version": "1.0.0",
+  "description": "The official code-roller website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-roller/code-roller.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/code-roller/code-roller.com/issues"
+  },
+  "homepage": "https://github.com/code-roller/code-roller.com#readme"
+}
