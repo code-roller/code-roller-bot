@@ -42,3 +42,8 @@ body {
 .lol {
   color: var(--fore-ground-color);
 }
+
+.logo {
+  margin : 10px 10px 10px 10px;
+  margin-top : 10%;
+}

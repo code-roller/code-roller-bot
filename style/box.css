@@ -4,7 +4,12 @@
   height: 200px;
   /* border: 1px solid #f1f1f1; */
   border: none;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px; /*
+   Remove this if you don't want the 3D effect */
+   margin: auto;
+   margin-top : 5%;
+
+   /* border-radius: 50%; */
 }
 
 /* This container is needed to position the front and back side */
@@ -33,7 +38,7 @@
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
+  background-color: #343538;
   color: black;
 }
 
