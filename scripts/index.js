@@ -12,3 +12,12 @@ const typeWriterText = new TypeWriter(
 
 // start the typewriter effect
 typeWriterText.startTypingEffect()
+
+// join discord modal box
+var modal = document.getElementById('id01');
+
+
+// setTimeout(function() {
+//   modal.style.display = "block"
+// }, 5000)
+modal.style.display = "block"
