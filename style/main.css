@@ -33,3 +33,7 @@ body {
   color: inherit;
   background: inherit;
 }
+
+.lol {
+  color: var(--fore-ground-color);
+}
