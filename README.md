@@ -1,3 +1,3 @@
+# The code-roller website
 
-# code-roller.github.io
-The official code-roller website
+The official website of the code-roller organization
