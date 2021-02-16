@@ -20,11 +20,11 @@ typeWriterText.startTypingEffect()
 // join discord modal box
 var modal = document.getElementById('id01');
 
-const switchBackGroundColor = (color) => {
+export const switchBackGroundColor = (color) => {
   document.body.style.backgroundColor = color.toString()
 }
 
-const openNewWindow = function(url) {
+export const openNewWindow = function(url) {
   window.open(
     url,
     "DescriptiveWindowName",
