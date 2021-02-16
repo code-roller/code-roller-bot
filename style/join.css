@@ -1,5 +1,5 @@
 .join-us-btn {
-  background-color: #4CAF50; /* Green */
+  background-color: rgb(107, 136, 239); 
   border: none;
   color: white;
   padding: 15px 32px;
@@ -7,6 +7,12 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.join-us-btn:hover {
+  background: rgb(100, 130, 239);
 }
 
 .j {

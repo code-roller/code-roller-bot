@@ -6,7 +6,7 @@ const DISCORD_INVITE_URL = "https://discord.gg/vzcNRVrHR5"
 // the text hello world
 // selected for typewriting text
 const text = document.querySelector(".text")
-const discordJoinButton = document.querySelector(".joinbtn")
+const discordJoinButton = document.querySelector(".join-us-btn")
 
 // the typewriter text effect
 const typeWriterText = new TypeWriter(
