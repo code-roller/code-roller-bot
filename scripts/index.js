@@ -32,12 +32,12 @@ const openNewWindow = function(url) {
   );
 }
 
-setTimeout(function() {
-    if(!isUserMobileBrowser()) {
-      modal.style.display = "block"
-      // switchBackGroundColor("rgba(0,0,0,0.5)")
-    }
-}, 5000)
+// setTimeout(function() {
+//     if(!isUserMobileBrowser()) {
+//       modal.style.display = "block"
+//       // switchBackGroundColor("rgba(0,0,0,0.5)")
+//     }
+// }, 5000)
 
 
 discordJoinButton.addEventListener('click', function() {
