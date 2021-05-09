@@ -1,5 +1,6 @@
 import { Component, h } from '@stencil/core';
 import { Image } from './image'
+import { BrowserWindow } from './browser'
 
 @Component({
   tag: 'app-root',
@@ -22,7 +23,9 @@ export class AppRoot {
       <div>
         <div id="emoji-widget">
           <div id="emoji">
-            <img src={this.imageSource()} alt="" class="src" />
+            <img src={this.imageSource()} alt="" class="src" title="Join us" onClick={(event) => {
+              const browser = new BrowserWindow("https://discord.gg/vzcNRVrHR5")
+            }}/>
           </div>
         </div>
       </div>
