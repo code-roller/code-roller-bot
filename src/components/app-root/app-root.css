@@ -1,10 +1,8 @@
-
-
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
 
-#emoji-widget{
+#emoji-widget {
   width: 300px;
   height: 300px;
   background: #40454b;
@@ -15,17 +13,17 @@
   cursor: pointer;
 }
 
-#emoji{
-  transition: all .1s linear;
+#emoji {
+  transition: all 0.1s linear;
 }
 
-#emoji-widget:hover #emoji{
+#emoji-widget:hover #emoji {
   filter: grayscale(0);
   transform: scale(1.3);
-  transition: all .1s linear;
+  transition: all 0.1s linear;
 }
 
 img {
-  height : 30vh;
-  width : 30vh;
+  height: 30vh;
+  width: 30vh;
 }
