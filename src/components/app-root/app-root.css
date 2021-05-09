@@ -16,7 +16,6 @@
 }
 
 #emoji{
-  filter: grayscale(100%);
   transition: all .1s linear;
 }
 
@@ -26,3 +25,7 @@
   transition: all .1s linear;
 }
 
+img {
+  height : 30vh;
+  width : 30vh;
+}
