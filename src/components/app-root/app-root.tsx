@@ -1,4 +1,5 @@
 import { Component, h } from '@stencil/core';
+import { Image } from './image'
 
 @Component({
   tag: 'app-root',
@@ -6,21 +7,24 @@ import { Component, h } from '@stencil/core';
   shadow: true,
 })
 export class AppRoot {
+  private createImageUrl():void {
+    const image:void = Image.createImageUrl()
+    return image
+  }
+
+  private imageSource():string {
+    return window.localStorage.getItem("img")
+  }
+
   render() {
+    this.createImageUrl()
     return (
       <div>
-        <header>
-          <h1>Stencil App Starter</h1>
-        </header>
-
-        <main>
-          <stencil-router>
-            <stencil-route-switch scrollTopOffset={0}>
-              <stencil-route url="/" component="app-home" exact={true} />
-              <stencil-route url="/profile/:name" component="app-profile" />
-            </stencil-route-switch>
-          </stencil-router>
-        </main>
+        <div id="emoji-widget">
+          <div id="emoji">
+            <img src={this.imageSource()} alt="" class="src" />
+          </div>
+        </div>
       </div>
     );
   }

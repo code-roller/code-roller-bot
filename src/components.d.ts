@@ -5,28 +5,21 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { MatchResults } from "@stencil/router";
 export namespace Components {
-    interface AppHome {
-    }
-    interface AppProfile {
-        "match": MatchResults;
+    interface AppIntro {
     }
     interface AppRoot {
     }
+    interface TypewriterText {
+        "text": string;
+    }
 }
 declare global {
-    interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {
+    interface HTMLAppIntroElement extends Components.AppIntro, HTMLStencilElement {
     }
-    var HTMLAppHomeElement: {
-        prototype: HTMLAppHomeElement;
-        new (): HTMLAppHomeElement;
-    };
-    interface HTMLAppProfileElement extends Components.AppProfile, HTMLStencilElement {
-    }
-    var HTMLAppProfileElement: {
-        prototype: HTMLAppProfileElement;
-        new (): HTMLAppProfileElement;
+    var HTMLAppIntroElement: {
+        prototype: HTMLAppIntroElement;
+        new (): HTMLAppIntroElement;
     };
     interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {
     }
@@ -34,33 +27,39 @@ declare global {
         prototype: HTMLAppRootElement;
         new (): HTMLAppRootElement;
     };
+    interface HTMLTypewriterTextElement extends Components.TypewriterText, HTMLStencilElement {
+    }
+    var HTMLTypewriterTextElement: {
+        prototype: HTMLTypewriterTextElement;
+        new (): HTMLTypewriterTextElement;
+    };
     interface HTMLElementTagNameMap {
-        "app-home": HTMLAppHomeElement;
-        "app-profile": HTMLAppProfileElement;
+        "app-intro": HTMLAppIntroElement;
         "app-root": HTMLAppRootElement;
+        "typewriter-text": HTMLTypewriterTextElement;
     }
 }
 declare namespace LocalJSX {
-    interface AppHome {
-    }
-    interface AppProfile {
-        "match"?: MatchResults;
+    interface AppIntro {
     }
     interface AppRoot {
     }
+    interface TypewriterText {
+        "text"?: string;
+    }
     interface IntrinsicElements {
-        "app-home": AppHome;
-        "app-profile": AppProfile;
+        "app-intro": AppIntro;
         "app-root": AppRoot;
+        "typewriter-text": TypewriterText;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
-            "app-profile": LocalJSX.AppProfile & JSXBase.HTMLAttributes<HTMLAppProfileElement>;
+            "app-intro": LocalJSX.AppIntro & JSXBase.HTMLAttributes<HTMLAppIntroElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+            "typewriter-text": LocalJSX.TypewriterText & JSXBase.HTMLAttributes<HTMLTypewriterTextElement>;
         }
     }
 }
